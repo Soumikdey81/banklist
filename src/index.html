@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booklist</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body class="bg-slate-100 box-border m-0 p-0">
+    <header>
+      <nav class="flex justify-between items-center px-5 py-2">
+        <p class="text-black text-xl font-bold">Log in to get started</p>
+        <div class="flex items-center gap-2">
+          <input
+            type="text"
+            placeholder="user"
+            class="rounded-lg px-2 py-1 text-center uppercase"
+          />
+          <input
+            type="text"
+            placeholder="pin"
+            maxlength="4"
+            class="rounded-lg px-2 py-1 text-center uppercase"
+          />
+          <button class="text-2xl">
+            <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main class="h-screen">
+      <div class="w-full flex justify-between p-5">
+        <div class="flex flex-col">
+          <p class="text-2xl">Current Balance</p>
+          <p class="text-base text-slate-400">
+            As of <span id="curDate"></span>
+          </p>
+        </div>
+        <div class="text-4xl">
+          <p>0000 <span id="curIcon"></span></p>
+        </div>
+      </div>
+      <div class="w-full grid grid-cols-2 gap-2 p-5">
+        <div class="w-1/2">
+          <ul class="w-full">
+            <li class="flex justify-between py-1 bg-white">
+              <span class="deposite rounded-md px-2 py-1 text-white"></span>
+              <span class="amount"></span>
+            </li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <div class="w-1/2">vbv</div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
