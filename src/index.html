@@ -44,21 +44,90 @@
           </p>
         </div>
         <div class="text-4xl">
-          <p>0000 <span id="curIcon"></span></p>
+          <p>0000 <span id="curIcon">€</span></p>
         </div>
       </div>
-      <div class="w-full grid grid-cols-2 gap-2 p-5">
-        <div class="w-1/2">
-          <ul class="w-full">
-            <li class="flex justify-between py-1 bg-white">
-              <span class="deposite rounded-md px-2 py-1 text-white"></span>
-              <span class="amount"></span>
+      <div class="w-full grid grid-cols-2 gap-5 px-5 py-10">
+        <div class="bg-white min-h-screen py-0.5 rounded-lg">
+          <ul>
+            <li
+              class="flex justify-between py-6 px-3 bg-white border-b-4 border-slate-100"
+            >
+              <div>
+                <span
+                  class="uppercase rounded-lg px-2 py-1 mr-5 text-white bg-green-500"
+                  >2 Deposite</span
+                >
+                <span class="amount">3 days ago</span>
+              </div>
+              <span>4000€</span>
             </li>
-            <li></li>
-            <li></li>
+            <li
+              class="flex justify-between py-6 px-3 bg-white border-b-4 border-slate-100"
+            >
+              <div>
+                <span
+                  class="uppercase rounded-lg px-2 py-1 mr-5 text-white bg-red-500"
+                  >2 Withdrawal
+                </span>
+                <span class="amount">3 days ago</span>
+              </div>
+              <span>-4000€</span>
+            </li>
           </ul>
         </div>
-        <div class="w-1/2">vbv</div>
+        <div class="min-h-screen grid grid-cols-1 grid-rows-3 gap-5">
+          <div
+            class="bg-gradient-to-b from-yellow-300 to-yellow-500 rounded-lg flex flex-col justify-center items-start gap-3 py-5 px-10"
+          >
+            <p class="text-xl font-bold">Transfer Money</p>
+            <div class="flex gap-2">
+              <div class="flex flex-col items-center gap-1">
+                <input type="text" class="rounded-lg px-2 py-1 text-center" />
+                <p class="font-bold">Transfer ID</p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <input type="text" class="rounded-lg px-2 py-1 text-center" />
+                <p class="font-bold">Amount</p>
+              </div>
+              <button class="bg-white px-2 py-1 max-h-fit rounded-lg">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-green-300 to-green-500 rounded-lg flex flex-col justify-center items-start gap-3 py-5 px-10"
+          >
+            <p class="text-xl font-bold">Request Loan</p>
+            <div class="flex gap-2">
+              <div class="flex flex-col items-center gap-1">
+                <input type="text" class="rounded-lg px-2 py-1 text-center" />
+                <p class="font-bold">Amount</p>
+              </div>
+              <button class="bg-white px-2 py-1 max-h-fit rounded-lg">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+          <div
+            class="bg-gradient-to-b from-red-300 to-red-500 rounded-lg flex flex-col justify-center items-start gap-3 py-5 px-10"
+          >
+            <p class="text-xl font-bold">Close Account</p>
+            <div class="flex gap-2">
+              <div class="flex flex-col items-center gap-1">
+                <input type="text" class="rounded-lg px-2 py-1 text-center" />
+                <p class="font-bold">Transfer ID</p>
+              </div>
+              <div class="flex flex-col items-center gap-1">
+                <input type="text" class="rounded-lg px-2 py-1 text-center" />
+                <p class="font-bold">Amount</p>
+              </div>
+              <button class="bg-white px-2 py-1 max-h-fit rounded-lg">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
     <script src="./script.js"></script>
